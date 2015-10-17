@@ -1,0 +1,3 @@
+fixtures:
+  repositories:
+    apache: 'git://github.com/ChristerWendel/puppet-apache'

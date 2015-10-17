@@ -1,0 +1,9 @@
+<% @locations.each do |location| -%>
+<Location /<%= location %>>
+  Require valid-user
+  AuthType Basic
+  AuthBasicProvider ldap
+  AuthName "<%= @realm %>"
+  AuthLDAPURL "<%= @ldapurl %>"
+</Location>
+<% end -%>
