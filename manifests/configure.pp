@@ -4,6 +4,7 @@
 class apache_ldap::configure {
   $locations = $apache_ldap::locations
   $realm = $apache_ldap::realm
+  $ldapurl = $apache_ldap::ldapurl
 
   file { '/etc/apache2/conf-available/ldap.conf':
     ensure  => present,
